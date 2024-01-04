@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.13)
+project(FoolMoon)
+add_executable(foolmoon main.c foolmoon.c)
+add_compile_definitions(foolmoon PUBLIC _USE_MATH_DEFINES)
+target_link_libraries(foolmoon PUBLIC m)
