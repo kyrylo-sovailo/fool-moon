@@ -290,7 +290,7 @@ double get_time()
     j2000_calender.tm_isdst = 0;
     time_t j2000 = mktime(&j2000_calender);
     time_t now = time(NULL);
-    return now - j2000;
+    return (double)(now - j2000);
 }
 
 bool is_planet_retrograde(enum Body body)
